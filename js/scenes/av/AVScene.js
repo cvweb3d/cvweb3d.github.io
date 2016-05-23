@@ -29,7 +29,7 @@ function initAVScene() {
     //Content
     $('#description').text("Prof. Dr.-Ing. Dietrich Paulus");
     $('#page-title').text("AKTIVES SEHEN");
-    $('#content').load('./content/av/avSceneStart.html');
+    $('#content').load('content/av/avSceneStart.html');
     //Scene
     renderer.setClearColor(0x000000);
     renderer.domElement.focus();
