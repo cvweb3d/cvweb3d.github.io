@@ -32,7 +32,7 @@ function initAVScene() {
     $('#content').load('content/av/avSceneStart.html');
     //Scene
     renderer.setClearColor(0x000000);
-
+    renderer.domElement.focus();
     avScene = new THREE.Scene();
     scene.add(avScene);
     //Camera
