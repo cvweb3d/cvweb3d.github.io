@@ -1,9 +1,8 @@
 #avStartBox {
     top: 30%;
     position: absolute;
-    width: 100%;
+    width: 90%;
     z-index: 1200;
-    overflow: hidden !important;
 }
 
 #avBox2 {
