@@ -29,7 +29,6 @@ function initAVScene() {
     //Content
     $('#description').text("Prof. Dr.-Ing. Dietrich Paulus");
     $('#page-title').text("AKTIVES SEHEN");
-    $('#content').load('content/av/avSceneStart.html');
     //Scene
     renderer.setClearColor(0x000000);
     renderer.domElement.focus();
@@ -41,6 +40,7 @@ function initAVScene() {
     camera.fov = 60;
     cameraFixed = true;
     camera.updateProjectionMatrix();
+    $('#content').load('content/av/avSceneStart.html');
 
     //Lisa Camera
     avSceneLisaCamera = new THREE.PerspectiveCamera(100, WIDTH / 2 * HEIGHT, 5, 600000);
@@ -319,7 +319,7 @@ function avSceneRender0() {
             //Zeichne das Webcambild 
             videoContext.drawImage(video, 0, 0, videoCanvas.width, videoCanvas.height);
             //Zeichne die Bedienfelder darüber
-            for (var i = 0; i < buttons.length; i++){
+            for (var i = 0; i < buttons.length; i++) {
                 layer2Context.drawImage(buttons[i].image, buttons[i].x, buttons[i].y, buttons[i].w, buttons[i].h);
             }
             //Berechne das Differenzbild
