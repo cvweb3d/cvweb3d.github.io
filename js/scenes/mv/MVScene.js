@@ -127,7 +127,7 @@ function mvSceneDiscover0() {
 
         sliceX.onShowtime = function() {
             volumeLoaded = true;
-       
+            volume.lowerThreshold: 45;
             sliceY.add(volume);
             sliceY.render();
             sliceZ.add(volume);
@@ -142,9 +142,9 @@ function mvSceneDiscover0() {
             $('#mvSceneDiscover0Gui').append(mvSceneDiscover0Gui.domElement);
 
             var lowerThresholdController = mvSceneDiscover0Gui.add(volume, 'lowerThreshold',
-                volume.min, volume.max).name('Lower Threshold');
+                volume.min, volume.max).name('Unterer Schwellwert');
             var upperThresholdController = mvSceneDiscover0Gui.add(volume, 'upperThreshold',
-                volume.min, volume.max).name('Upper Threshold');
+                volume.min, volume.max).name('Oberer Schwellwert');
             var sliceXController = mvSceneDiscover0Gui.add(volume, 'indexX', 0,
                 volume.dimensions[0] - 1).name('X-Axis');
             var sliceYController = mvSceneDiscover0Gui.add(volume, 'indexY', 0,
