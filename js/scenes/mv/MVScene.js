@@ -127,7 +127,7 @@ function mvSceneDiscover0() {
 
         sliceX.onShowtime = function() {
             volumeLoaded = true;
-            volume.lowerThreshold: 45;
+            volume.lowerThreshold = 45;
             sliceY.add(volume);
             sliceY.render();
             sliceZ.add(volume);
