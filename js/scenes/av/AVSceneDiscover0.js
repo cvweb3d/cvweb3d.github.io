@@ -201,5 +201,5 @@ function noStream(e) {
     if (e.code == 1) {
         msg = 'User denied access to use camera.';
     }
-    document.getElementById('errorMessage').textContent = msg;
+    console.log(msg);
 }
