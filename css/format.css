@@ -39,7 +39,7 @@ body {
     color: #FFD800;
 }
 
-a.highlight:link {
+a.highlight:link, a.highlight:visited {
     color: #ffffff;
     text-decoration: none;
 }
