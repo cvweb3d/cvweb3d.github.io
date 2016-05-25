@@ -46,7 +46,7 @@ function initMVScene() {
     $('#page-title').text("MEDIZINISCHE VISUALISIERUNG");
     $('#content').load("content/mv/mvSceneStart.html");
     cameraFixed = true;
-    sceneNr =3;
+    sceneNr = 3;
 }
 
 function volumeRenderingInit() {
@@ -128,6 +128,11 @@ function mvSceneDiscover0() {
         sliceX.onShowtime = function() {
             volumeLoaded = true;
             volume.lowerThreshold = 45;
+            volume.lowerThreshold = 80;
+            volume.windowLower = 115;
+            volume.windowHigh = 360;
+            volume.maxColor = [1, 0.8, 0];
+            volume.opacity = 0.2;
             sliceY.add(volume);
             sliceY.render();
             sliceZ.add(volume);
