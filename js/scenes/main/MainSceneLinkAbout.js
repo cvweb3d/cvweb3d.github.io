@@ -11,8 +11,10 @@ function initMainSceneLinkAbout() {
 
     loader.load("models/cv.json", function(geometry) {
         var material = new THREE.MeshLambertMaterial({
-            color: 0xFC8E11,
+            color: 0xED4F00,
             emissive: 0xFF470A,
+            specular: 0x000000,
+            shininess: 6,
             wireframe: true
         });
         mainSceneLinkAboutTop = new THREE.Mesh(geometry, material);

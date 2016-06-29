@@ -6,7 +6,7 @@ function initMainSceneLinkCG() {
     mainSceneLinkCG = new THREE.Object3D();
 
     //initialise the earth
-    var material = new THREE.MeshBasicMaterial({
+    var material = new THREE.MeshLambertMaterial({
         color: 0xffffff,
         wireframe: true
     });

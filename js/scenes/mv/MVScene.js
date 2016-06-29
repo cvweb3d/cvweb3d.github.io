@@ -96,9 +96,7 @@ function mvSceneDiscover0() {
 
     volume = new X.volume();
     // map the data url to each of the slices
-    volume.file = _dicom.sort().map(function(v) {
-        return 'https://x.babymri.org/?' + v + '&.DCM';
-    });
+    volume.file = 'https://x.babymri.org/?lesson17.nii.gz';
 
     $('#content').load("content/mv/mvSceneDiscover0.html", function() {
 
